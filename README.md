@@ -32,13 +32,13 @@ result:
 	{
 		"op": "remove",
 		"path": "/d",
-		"oldValue": "\"deleted\""
+		"oldValue": "deleted"
 	},
 	{
 		"op": "replace",
 		"path": "/e",
 		"value": "new",
-		"oldValue": "\"old\""
+		"oldValue": "old"
 	},
 	{
 		"op": "add",

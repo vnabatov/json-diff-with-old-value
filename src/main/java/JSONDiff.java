@@ -30,14 +30,13 @@ public class JSONDiff {
                     case "move":
                         ((ObjectNode) node).put(
                                 "oldValue",
-                                sourceJson.at(node.get("from").textValue()).toString());
+                                sourceJson.at(node.get("from").textValue()));
                         break;
                     case "remove":
                     case "replace":
                         ((ObjectNode) node).put(
                                 "oldValue",
-                                sourceJson.at(node.get("path").textValue()).toString()
-                        );
+                                sourceJson.at(node.get("path").textValue()));
                         break;
                 }
                 result.add(node.toString());

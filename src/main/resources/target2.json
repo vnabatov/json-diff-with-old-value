@@ -1,0 +1,212 @@
+{
+  "modelType": "ArticleProduction",
+  "id": "36aae8e6-b399-4e6d-ab6b-508a538d1c76",
+  "productionContact": [
+    {
+      "modelType": "Participant",
+      "id": "e6dcec6d-3734-4580-bb6d-c1edb2497785",
+      "givenName": "Oleg",
+      "familyName": "Tkachenko",
+      "orcId": "0000-0003-0888-1984"
+    }
+  ],
+  "appliesLicense": {
+    "modelType": "CopyrightPolicy",
+    "copyright": [
+      {
+        "htmLang": null,
+        "htmValue": null
+      }
+    ],
+    "copyrightPolicyOf": {
+      "modelType": "CopyrightTransferAgreement",
+      "category": null,
+      "dateSigned": null
+    },
+    "copyrightYear": null,
+    "distributionModel": "Subscription",
+    "license": {
+      "modelType": null,
+      "mnemonic": null
+    }
+  },
+  "requiresPayment": [
+    {
+      "modelType": "Order",
+      "paymentDate": null
+    }
+  ],
+  "targetedProduct": {
+    "modelType": "ArticleProduct",
+    "id": "15039392",
+    "doi": "10.1111/chd.50915",
+    "isPartOfPeriodical": {
+      "id": "6748942",
+      "modelType": "Journal"
+    }
+  },
+  "hasWorkMap": {
+    "modelType": "ResearchMap",
+    "id": "80da1782-3410-4ba7-a0cc-dcb754712f61"
+  },
+  "status": "BOOKIN",
+  "comment": [
+    null
+  ],
+  "commentProduction": [
+    "Sanmiguel-Rojas, Enrique:http://orcid.org/0000-0003-0888-1984 add to AQF:missing GTOC"
+  ],
+  "hasSchedule": {
+    "modelType": "Schedule",
+    "id": "288C8545-0AC9-211A-69C5-86BB1B6C3FF8",
+    "state": "wstate:Created",
+    "hasScheduleEvent": [
+      {
+        "modelType": "ScheduleEvent",
+        "id": "2818",
+        "modelEventType": {
+          "id": "wevent:IssueCompilation",
+          "mnemonic": "Issue Compilation"
+        },
+        "eventCode": "PRESS",
+        "dateForecastOriginal": null,
+        "dateForecastCurrent": null,
+        "dateCompleted": null
+      },
+      {
+        "modelType": "ScheduleEvent",
+        "id": "2820",
+        "modelEventType": {
+          "id": "wevent:ProofedByAuthor",
+          "mnemonic": "PRF RECD"
+        },
+        "eventCode": "FR_AU",
+        "dateForecastOriginal": "2020-12-22",
+        "dateForecastCurrent": "2020-12-22",
+        "dateCompleted": null
+      },
+      {
+        "modelType": "ScheduleEvent",
+        "id": "2826",
+        "modelEventType": {
+          "id": "wevent:ManuscriptReceivedInProduction",
+          "mnemonic": "RECD at JWS"
+        },
+        "eventCode": "RECD",
+        "dateForecastOriginal": "2020-12-03",
+        "dateForecastCurrent": "2020-12-03",
+        "dateCompleted": "2020-12-03"
+      },
+      {
+        "modelType": "ScheduleEvent",
+        "id": "2832",
+        "modelEventType": {
+          "id": "wevent:ManuscriptToTypesetter",
+          "mnemonic": "To TS"
+        },
+        "eventCode": "TO_TYPE",
+        "dateForecastOriginal": "2020-12-07",
+        "dateForecastCurrent": "2020-12-07",
+        "dateCompleted": null
+      },
+      {
+        "modelType": "ScheduleEvent",
+        "id": "2833",
+        "modelEventType": {
+          "id": "wevent:RevisedProofApproved",
+          "mnemonic": "REV ART PRF APPR"
+        },
+        "eventCode": "UPGCXPRFAP",
+        "dateForecastOriginal": "2020-12-29",
+        "dateForecastCurrent": "2020-12-29",
+        "dateCompleted": null
+      },
+      {
+        "modelType": "ScheduleEvent",
+        "id": "2834",
+        "modelEventType": {
+          "id": "wevent:RevisedProofReceived",
+          "mnemonic": "REV ART PRF RECD"
+        },
+        "eventCode": "FR_CXUNPAG",
+        "dateForecastOriginal": "2020-12-28",
+        "dateForecastCurrent": "2020-12-28",
+        "dateCompleted": null
+      },
+      {
+        "modelType": "ScheduleEvent",
+        "id": "2837",
+        "modelEventType": {
+          "id": "wevent:ProofCorrectionsToTypesetter",
+          "mnemonic": "PRF CRX to TS"
+        },
+        "eventCode": "TO_CXUNPAG",
+        "dateForecastOriginal": "2020-12-25",
+        "dateForecastCurrent": "2020-12-25",
+        "dateCompleted": null
+      },
+      {
+        "modelType": "ScheduleEvent",
+        "id": "2838",
+        "modelEventType": {
+          "id": "wevent:PublishedOnlineEarlyUnpaginated",
+          "mnemonic": "EV Pub Online"
+        },
+        "eventCode": "MSWISUNPAG",
+        "dateForecastOriginal": "2021-01-05",
+        "dateForecastCurrent": "2021-01-05",
+        "dateCompleted": null
+      },
+      {
+        "modelType": "ScheduleEvent",
+        "id": "2839",
+        "modelEventType": {
+          "id": "wevent:EarlyViewFileApproved",
+          "mnemonic": "EV Files APPR"
+        },
+        "eventCode": "UNPGSGMLAP",
+        "dateForecastOriginal": "2021-01-04",
+        "dateForecastCurrent": "2021-01-04",
+        "dateCompleted": null
+      },
+      {
+        "modelType": "ScheduleEvent",
+        "id": "2840",
+        "modelEventType": {
+          "id": "wevent:EarlyViewFileReceived",
+          "mnemonic": "EV Files RECD"
+        },
+        "eventCode": "UNPGSGMLLD",
+        "dateForecastOriginal": "2020-12-31",
+        "dateForecastCurrent": "2020-12-31",
+        "dateCompleted": null
+      },
+      {
+        "modelType": "ScheduleEvent",
+        "id": "2920",
+        "modelEventType": {
+          "id": "wevent:BookinComplete",
+          "mnemonic": "Bookin Complete"
+        },
+        "eventCode": "BOOKEDIN",
+        "dateForecastOriginal": "2020-12-07",
+        "dateForecastCurrent": "2020-12-07",
+        "dateCompleted": null
+      },
+      {
+        "modelType": "ScheduleEvent",
+        "id": "2922",
+        "modelEventType": {
+          "id": "wevent:ProofToAuthor",
+          "mnemonic": "PRF Out"
+        },
+        "eventCode": "PRF_OUT",
+        "dateForecastOriginal": "2020-12-17",
+        "dateForecastCurrent": "2020-12-17",
+        "dateCompleted": null
+      }
+    ]
+  },
+  "authorServicesEnabled": "yes",
+  "fundingConfirmedByAuthor": "NA"
+}

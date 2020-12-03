@@ -1,0 +1,37 @@
+{
+  "id": "6f93b1a0-a27b-4767-8ed4-8ad483597eb8",
+  "modelType": "ArticleProduction",
+  "state": "wstate:Created",
+  "created": "2020-12-03T13:10:28.957Z",
+  "createdBy": {},
+  "modified": "2020-12-03T13:11:39.209Z",
+  "modifiedBy": {},
+  "appliesLicense": {
+    "id": "4be93b90-2ee1-4e4d-933c-88b69c4d318b"
+  },
+  "hasWorkMap": {
+    "modelType": "ResearchMap",
+    "id": "bad8bd79-6de7-4a38-86df-4059d82a6afa"
+  },
+  "targetedProduct": {
+    "modelType": "ArticleProduct",
+    "state": "wstate:Created",
+    "doi": "10.1111/chd.50918",
+    "isPartOfPeriodical": {
+      "modelType": "Journal",
+      "id": "PD6748942"
+    },
+    "productCode": "CHD50918"
+  },
+  "usesWorkflow": "wwfl:ArticleStandardWorkflow",
+  "cas": 1607001099227955200,
+  "productionOf": {
+    "modelType": "Submission",
+    "id": "3fd16d37-92b6-4c0d-9be9-59444fcf43f9"
+  },
+  "_links": {
+    "self": {
+      "href": "http://cmh-production-api-qa.aws.wiley.com:8080/v1/productions/6f93b1a0-a27b-4767-8ed4-8ad483597eb8"
+    }
+  }
+}

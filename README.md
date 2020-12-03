@@ -53,6 +53,8 @@ result:
 
 ## complex example
 
+(2 different production objects)
+
 source.json
 ```
 {

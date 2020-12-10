@@ -1,5 +1,6 @@
 # json-diff-with-old-value
 
+with patch instead of target.json https://github.com/vnabatov/json-diff-with-old-value/tree/with-patch-instead-of-target
 
 ## simple example
 

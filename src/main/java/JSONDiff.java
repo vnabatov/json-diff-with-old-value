@@ -9,20 +9,21 @@ import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 import com.flipkart.zjsonpatch.JsonDiff;
+import com.flipkart.zjsonpatch.JsonPatch;
 
 public class JSONDiff {
     public static void main(String[] args) {
+        ArrayList<String> result = new ArrayList<String>();
         ObjectMapper mapper = new ObjectMapper();
         try {
-            JsonNode source = mapper.readTree(getResourceFileAsString("source.json"));
-            JsonNode target = mapper.readTree(getResourceFileAsString("target.json"));
-            JsonNode patch = JsonDiff.asJson(source, target);
+            JsonNode sourceNode = mapper.readTree(getResourceFileAsString("source.json"));
+            JsonNode patchedFieldsNode = mapper.readTree(getResourceFileAsString("patch.json"));
 
-            JsonNode sourceJson = new ObjectMapper().readTree(source.toString());
-            JsonNode obj = new ObjectMapper().readTree(patch.toString());
-            ArrayList<String> result = new ArrayList<String>();
+            JsonNode targetNode = JsonPatch.apply(JsonDiff.asJson(mapper.readTree("{}"), patchedFieldsNode), sourceNode);
 
-            for (JsonNode node : obj) {
+            JsonNode diffNode = JsonDiff.asJson(sourceNode, targetNode);
+
+            for (JsonNode node : diffNode) {
                 String op = node.get("op").textValue();
                 System.out.println(node);
 
@@ -30,13 +31,13 @@ public class JSONDiff {
                     case "move":
                         ((ObjectNode) node).put(
                                 "oldValue",
-                                sourceJson.at(node.get("from").textValue()));
+                                sourceNode.at(node.get("from").textValue()));
                         break;
                     case "remove":
                     case "replace":
                         ((ObjectNode) node).put(
                                 "oldValue",
-                                sourceJson.at(node.get("path").textValue()));
+                                sourceNode.at(node.get("path").textValue()));
                         break;
                 }
                 result.add(node.toString());
